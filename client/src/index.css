@@ -152,8 +152,10 @@ body {
 
 
 
-/* SMOOTHIES */
-/* Smoothies.css */
+
+
+
+
 
 .smoothie-main {
   display: flex;
@@ -176,7 +178,7 @@ body {
 }
 
 .visual {
-  flex: 3; /* 60% of the card height */
+  flex: 3; 
 }
 
 .visual img {
@@ -186,7 +188,7 @@ body {
 }
 
 .contents {
-  flex: 2; /* 40% of the card height */
+  flex: 2; 
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -231,66 +233,6 @@ body {
 
 
 
-/* ADD SMOOTHIE */
-.form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  background: linear-gradient(135deg, #ff6ec4, #7873f5);
-}
-
-.form-card {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
-}
-
-.form-title {
-  margin-bottom: 1rem;
-  color: #333333;
-  text-align: center;
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #555555;
-}
-
-.form-group input {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-.form-submit {
-  width: 100%;
-  padding: 0.75rem;
-  background: linear-gradient(135deg, #ff6ec4, #7873f5);
-  border: none;
-  border-radius: 4px;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.form-submit:hover {
-  background: linear-gradient(135deg, #a95ff5 , #ff6ec4);
-}
-
-
-
 /* VIEW SMOOTHIE */
 .view-smoothie-main {
   display: flex;
@@ -304,7 +246,7 @@ body {
 }
 
 .visual {
-  flex: 3; /* 60% of the card width */
+  flex: 3; 
 }
 
 .visual img {
@@ -314,7 +256,7 @@ body {
 }
 
 .contents {
-  flex: 2; /* 40% of the card width */
+  flex: 2; 
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -373,3 +315,71 @@ body {
 .delete-button:hover {
   background: linear-gradient(135deg, #d15a5a, #d15d5d);
 }
+
+
+
+
+/* Products.css */
+
+.products-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.filters-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filters-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.filters-form input,
+.filters-form select {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filters-form button {
+  padding: 0.25rem 0.25rem;
+  /* background: linear-gradient(135deg, #a95ff5, #ff6ec4); */
+  font-weight: 900;
+  color: rgb(125, 125, 125);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 3px solid #c08ff1;
+}
+
+.filters-form button:hover {
+  border: 3px solid #ff6ec4;
+  /* background: linear-gradient(135deg, #ff6ec4, #a95ff5); */
+}
+
+/* .smoothie-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+} */
+
+/* .product-card {
+  flex: 1 0 300px; 
+  min-width: 250px; 
+  margin: 0.5rem; 
+} */
+
+/* @media (max-width: 768px) {
+  .smoothie-main {
+      justify-content: flex-start;
+  }
+} */

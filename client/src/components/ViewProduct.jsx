@@ -13,10 +13,10 @@ function ViewProduct() {
         <img src='https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=background-blur-clean-531880.jpg&fm=jpg' />
       </div>
       <div className="contents">
-        <div className="heading">{product.productName}</div>
-        <div className="sub-heading">{product.price}</div>
-        <div className="sub-heading">{product.rating}</div>
-        <div className="sub-heading">{product.availability}</div>
+      <div className="heading">Name: {product.productName}</div>
+        <div className="sub-heading">Price: {product.price}</div>
+        <div className="sub-heading">Rating: {product.rating}</div>
+        <div className="sub-heading">Availability: {product.availability}</div>
       </div>
     </div>
   );
